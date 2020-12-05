@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">cinema app</string>
+    <string name="navigation_drawer_open" />
+    <string name="navigation_drawer_close" />
+</resources>

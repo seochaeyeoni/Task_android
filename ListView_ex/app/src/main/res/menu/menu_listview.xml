@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/delete_message"
+        android:title="삭제"
+        android:icon="@android:drawable/ic_menu_delete" />
+    <item
+        android:id="@+id/modify_name"
+        android:title="이름 수정"
+        android:icon="@android:drawable/ic_menu_edit" />
+
+</menu>

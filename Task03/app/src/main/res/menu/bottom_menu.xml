@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu1"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_person_outline_24"
+        android:title="과외찾기"/>
+    <item
+        android:id="@+id/menu2"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_mail_outline_24"
+        android:title="과외문의"/>
+    <item
+        android:id="@+id/menu3"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_insert_emoticon_24"
+        android:title="내과외"/>
+    <item
+        android:id="@+id/menu4"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_event_note_24"
+        android:title="게시판"/>
+    <item
+        android:id="@+id/menu5"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_folder_open_24"
+        android:title="특급자료"/>
+
+</menu>

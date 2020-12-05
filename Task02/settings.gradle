@@ -1,0 +1,5 @@
+include ':app:musicplayer_ex'
+include ':app:camera_ex'
+include ':app:lifecycle_ex'
+include ':app'
+rootProject.name = "Task02"

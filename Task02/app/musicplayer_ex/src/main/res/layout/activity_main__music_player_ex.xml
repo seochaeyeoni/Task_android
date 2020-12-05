@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity_MusicPlayer_ex"
+    android:orientation="vertical"
+    android:weightSum="8">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="playlist playlist"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:textStyle="italic"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:layout_weight="1"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/btn_1"
+                android:layout_width="match_parent"
+                android:layout_height="157dp"
+                android:background="@drawable/bar1"/>
+            <ImageButton
+                android:id="@+id/btn_2"
+                android:layout_width="match_parent"
+                android:layout_height="157dp"
+                android:background="@drawable/bar2"/>
+            <ImageButton
+                android:id="@+id/btn_3"
+                android:layout_width="match_parent"
+                android:layout_height="157dp"
+                android:background="@drawable/bar3"/>
+            <ImageButton
+                android:id="@+id/btn_4"
+                android:layout_width="match_parent"
+                android:layout_height="157dp"
+                android:background="@drawable/bar4"/>
+            <ImageButton
+                android:id="@+id/btn_5"
+                android:layout_width="match_parent"
+                android:layout_height="157dp"
+                android:background="@drawable/bar5"/>
+            <ImageButton
+                android:id="@+id/btn_6"
+                android:layout_width="match_parent"
+                android:layout_height="157dp"
+                android:background="@drawable/bar6"/>
+            <ImageButton
+                android:id="@+id/btn_7"
+                android:layout_width="match_parent"
+                android:layout_height="157dp"
+                android:background="@drawable/bar7"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="20dp">
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@null"
+        android:src="@drawable/mymento_icon_1"
+        android:layout_gravity="left"
+        android:layout_marginBottom="30dp"/>
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:src="@drawable/mymento_title"
+        android:layout_gravity="center"
+        android:layout_marginBottom="30dp"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center">
+        <TableRow
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginBottom="15dp">
+            <Button
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:text="나의 수업"
+                android:background="@drawable/button_round_1"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="0dp"/>
+            <Button
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:text="선생님 찾기"
+                android:background="@drawable/button_round_1"
+                android:layout_marginBottom="0dp"/>
+        </TableRow>
+        <TableRow
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginBottom="15dp">
+            <Button
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:text="고객센터"
+                android:background="@drawable/button_round_1"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="0dp"/>
+            <Button
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:text="마이 페이지"
+                android:background="@drawable/button_round_1"
+                android:layout_marginBottom="0dp"/>
+        </TableRow>
+        <TableRow
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginBottom="15dp">
+            <Button
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:text="선생님 되기"
+                android:background="@drawable/button_round_2"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="0dp"/>
+            <Button
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:text="선생님 페이지"
+                android:background="@drawable/button_round_2"
+                android:layout_marginBottom="0dp"/>
+        </TableRow>
+
+    </TableLayout>
+
+
+
+
+
+</LinearLayout>

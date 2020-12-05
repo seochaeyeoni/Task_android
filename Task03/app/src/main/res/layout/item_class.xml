@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp">
+
+    <ImageView
+        android:id="@+id/profile_class"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:scaleType="centerCrop"
+        android:background="#F6E0F5"
+        android:src="@drawable/girlsimple"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+    <TextView
+        android:id="@+id/name_class"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="죠즈94646"
+        android:textColor="#2F2F2F"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@id/profile_class"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/grade_class"
+        android:layout_margin="5dp"
+        android:paddingTop="10dp"
+        android:paddingStart="15dp"/>
+    <TextView
+        android:id="@+id/grade_class"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="죠즈94646"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@id/profile_class"
+        app:layout_constraintTop_toBottomOf="@id/name_class"
+        app:layout_constraintBottom_toTopOf="@id/memo_class"
+        android:layout_margin="5dp"
+        android:paddingStart="15dp"/>
+    <TextView
+        android:id="@+id/memo_class"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="죠즈94646"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@id/profile_class"
+        app:layout_constraintTop_toBottomOf="@id/grade_class"
+        app:layout_constraintBottom_toTopOf="@id/memo_class"
+        android:layout_margin="5dp"
+        android:paddingStart="15dp"/>
+    <Button
+        android:id="@+id/btn_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="정보수정"
+        android:background="@drawable/button_round"
+        app:layout_constraintBaseline_toBaselineOf="@id/grade_class"
+        app:layout_constraintBottom_toTopOf="@id/btn_review"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_margin="5dp"/>
+    <Button
+        android:id="@+id/btn_review"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="후기남기기"
+        android:background="@drawable/button_round"
+        app:layout_constraintTop_toBottomOf="@id/btn_edit"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_margin="5dp"/>
+    <ImageView
+        android:id="@+id/info"
+        android:layout_width="27dp"
+        android:layout_height="15dp"
+        android:src="@drawable/ic_baseline_info_24"
+        android:scaleType="centerInside"
+        android:layout_margin="5dp"
+        app:layout_constraintBottom_toBottomOf="@id/tv_bottom"
+        app:layout_constraintTop_toTopOf="@id/tv_bottom"
+        app:layout_constraintRight_toLeftOf="@id/tv_bottom"/>
+    <TextView
+        android:id="@+id/tv_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="앞으로도 서로 계속 노력할 수 있도록 후기를 언제든지 다시 수정하실 수 있어요!"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@id/info"
+        app:layout_constraintTop_toBottomOf="@id/btn_review"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

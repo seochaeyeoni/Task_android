@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#03A9F4">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="(현재위치)"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="#ffffff"
+                    android:layout_marginTop="100dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="성동구 사근동"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
+                    android:textColor="#ffffff"
+                    android:layout_marginTop="8dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="맑음"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="#ffffff"
+                    android:layout_marginTop="8dp"/>
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/sun"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text=" 8°"
+                    android:textStyle="bold"
+                    android:textSize="55sp"
+                    android:textColor="#ffffff"
+                    android:layout_marginTop="8dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="최고 13° / 최저 2°"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:textColor="#ffffff"
+                    android:layout_marginTop="8dp"/>
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:src="@drawable/ic_baseline_brightness_1_24"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="70dp"/>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    app:cardCornerRadius="14dp"
+                    android:background="@android:color/transparent">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:background="#03A9F4">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#26000000"
+                            android:textColor="#ffffff"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:text="오늘"
+                            android:paddingStart="10dp"/>
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:background="#26ffffff"
+                            android:layout_width="match_parent"
+                            android:layout_height="110dp"/>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    app:cardCornerRadius="14dp"
+                    android:background="@android:color/transparent">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:background="#03A9F4">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#26000000"
+                            android:textColor="#ffffff"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:text="일별 예보"
+                            android:paddingStart="10dp"/>
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:background="#26ffffff"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

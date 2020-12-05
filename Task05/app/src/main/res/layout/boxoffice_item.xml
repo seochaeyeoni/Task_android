@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/item_background"
+    >
+
+    <ImageView
+        android:id="@+id/poster"
+        android:layout_width="250dp"
+        android:layout_height="350dp"
+        android:src="@drawable/image11"
+        android:background="#00000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="30dp"/>
+    <TextView
+        android:id="@+id/rank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1. "
+        android:textStyle="bold"
+        android:textSize="40sp"
+        android:textColor="#ffffff"
+        app:layout_constraintTop_toBottomOf="@id/poster"
+        app:layout_constraintRight_toLeftOf="@id/movie_name"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="30dp"
+        android:paddingStart="10dp"
+        app:layout_constraintHorizontal_chainStyle="packed"/>
+    <TextView
+        android:id="@+id/movie_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="군도"
+        android:textStyle="bold"
+        android:textSize="40sp"
+        android:textColor="#ffffff"
+        app:layout_constraintTop_toBottomOf="@id/poster"
+        app:layout_constraintLeft_toRightOf="@id/rank"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="30dp"
+        android:paddingEnd="10dp"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        />
+    <TextView
+        android:id="@+id/showTm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="상영시간 | "
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        app:layout_constraintTop_toBottomOf="@id/movie_name"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/watchGradeNm"
+        android:layout_marginTop="20dp"
+        app:layout_constraintHorizontal_chainStyle="packed"/>
+    <TextView
+        android:id="@+id/watchGradeNm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00세 관람가 | "
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        app:layout_constraintTop_toBottomOf="@id/movie_name"
+        app:layout_constraintLeft_toRightOf="@id/showTm"
+        app:layout_constraintRight_toRightOf="@id/genreNm"
+        android:layout_marginTop="20dp"
+        app:layout_constraintHorizontal_chainStyle="packed"/>
+    <TextView
+        android:id="@+id/genreNm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="장르"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        app:layout_constraintTop_toBottomOf="@id/movie_name"
+        app:layout_constraintLeft_toRightOf="@id/watchGradeNm"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="20dp"
+        app:layout_constraintHorizontal_chainStyle="packed"/>
+    <Button
+        android:id="@+id/btn_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="상세보기"
+        android:textSize="30sp"
+        app:layout_constraintTop_toBottomOf="@id/showTm"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="20dp"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

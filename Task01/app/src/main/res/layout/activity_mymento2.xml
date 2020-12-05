@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="20dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@null"
+            android:src="@drawable/mymento_icon_2"
+            android:layout_gravity="left"
+            android:layout_marginBottom="50dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MY멘토 선생님"
+            android:layout_gravity="center"
+            android:gravity="center" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@null"
+            android:src="@drawable/mymento_icon_3"
+            android:layout_gravity="right"
+            android:layout_marginBottom="30dp"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="과외 찾기"
+        android:textSize="20dp"/>
+
+    //여기 뭐 해야되는뎅
+
+    <android.support.v7.widget.SearchView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="과목"/>
+    </android.support.v7.widget.SearchView>
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+            <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@null"
+            android:src="@drawable/mymento_icon_5"
+            android:layout_gravity="left"
+            />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="고등국어과외"/>
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@null"
+                android:src="@drawable/mymento_icon_6"
+                android:layout_gravity="left" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2020-09-25"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="모집중"/>
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@null"
+                android:src="@drawable/mymento_icon_9"
+                android:layout_gravity="left" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@null"
+                android:src="@drawable/mymento_icon_7"
+                android:layout_gravity="left" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="부산 북구"/>
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@null"
+                android:src="@drawable/mymento_icon_10" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="고등"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@null"
+                android:src="@drawable/mymento_icon_8"
+                android:layout_gravity="left" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="고등국어 문학 비문학"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="상세보기"
+                android:textSize="10dp" />
+        </TableRow>
+    </TableLayout>
+
+
+
+
+</LinearLayout>
