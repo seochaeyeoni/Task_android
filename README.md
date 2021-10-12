@@ -42,7 +42,7 @@ Android
 - 앱의 **컴포넌트**(Activity, Service, Broadcast Receiver, Contents Provider) 그리고 인텐트 필터와 같은 기능도 선언 가능
 
 ```markup
-ex) 최소 하나의 액티비티는, 앱이 실행되었을 때 실행될 액티비티(앱의 진입점!)라는 것을 인텐트 필터로 선언해주어야 함.
+ex) 하나의 액티비티는, 앱이 실행되었을 때 실행될 액티비티(앱의 진입점!)라는 것을 인텐트 필터로 선언해주어야 함.
 <activity android:name=".MainActivity">
       <intent-filter>
             <action android:name="android.intent.action.MAIN" />
@@ -145,6 +145,22 @@ Percent size (부모 뷰의 크기 - 패딩에 비례하여 뷰의 크기 결정
 ---
 
 ## Multi Thread
+
+프로세스 : 프로그램이 실행된 것
+
+싱글 스레드 : 한 프로세스 내의, 하나의 실행 단위
+
+멀티 스레드 : 한 프로세스 내의, 둘 이상의 실행단위
+
+멀티 스레딩 : 멀티 스레드로 수행하는 방식(컨텍스트 스위칭 - 동시성)
+
+❗ 안드로이드에서 스레드를 사용할 때 알아야 할 점
+
+- UI를 그려주는 것은 오직 **Main UI Thread**에서만 할 수 있다! (동기화 문제로 인해 안드로이드에서 Lock 걸어둠!)
+- 다른 스레드에서 UI를 변경하고 싶으면 자바에서는 **Handler**, 코틀린에서는 **runOnUiThread**를 이용하면 된다(+ 코틀린에는 `Coroutine`이 있다 - 코루틴은 스레드 위에서 실행 되므로, 코루틴을 여러 개 실행해도 컨텍스트 스위칭이 발생하지 않아 성능상 더 좋다).
+- Main UI Thread에서 오래 걸리는 작업을 해서 멈춘 화면을 보고 있어야 하면 **ANR**(Android Not Responding)이 발생한다. 따라서 오래 걸리는 작업(ex. 네트워크 통신)은 다른 스레드에서 해당 작업을 수행하여야 한다.
+
+[Thread를 이용하여 만든 앱(스폰지밥 수학게임)](https://github.com/seochaeyeoni/Task_android/tree/master/Task04/app/mathgame_spongebob)
 
 ---
 
