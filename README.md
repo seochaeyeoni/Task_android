@@ -137,6 +137,8 @@ Percent size (부모 뷰의 크기 - 패딩에 비례하여 뷰의 크기 결정
 - `onCreateViewHolder()` - ViewHolder와 그에 연결된 View를 생성하고 초기화한다. (재사용할) 껍데기만 만들어 놓음!
 - `onBindViewHolder()` - ViewHolder에 데이터를 bind 해 준다. 껍데기에 데이터가 채워진 상태!
 - `getItemCount()` - 가장 먼저 데이터 세트 크기를 가져온다.
+  
+🎁 **Jetpack Compose**에서는 Adapter 없이, item layout 없이, **LazyColumn**으로 손쉽게 리사이클러뷰의 기능을 구현할 수 있다! 동작방식은 다르나, 여전히 성능은 우수함.
 
 <a href="https://github.com/seochaeyeoni/Task_android/tree/master/Task03" target="_blank">ListView, RecyclerView 를 이용하여 만든 앱(김과외 클론)</a>
 
